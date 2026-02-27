@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Segoe UI, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #f5f8fa;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      width: 240px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #0f172a;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: #334155;
+      font-size: 14px;
+    }
+
+    button {
+      border: none;
+      border-radius: 6px;
+      padding: 8px 14px;
+      background: #0a66c2;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Thank You</h2>
+    <p>Your Outlook add-in test is working.</p>
+    <button id="closeBtn" type="button">Close</button>
+  </div>
+
+  <script>
+    Office.onReady(() => {
+      const closeBtn = document.getElementById("closeBtn");
+      closeBtn.addEventListener("click", () => {
+        Office.context.ui.messageParent("close");
+      });
+    });
+  </script>
+</body>
+</html>
