@@ -5,7 +5,7 @@ Office.onReady(() => {
 });
 
 function showThankYou(event) {
-  const dialogUrl = `${window.location.origin}/src/thankyou-dialog.html`;
+  const dialogUrl = new URL("./thankyou-dialog.html", window.location.href).toString();
 
   Office.context.ui.displayDialogAsync(dialogUrl, { height: 30, width: 20 }, (result) => {
     if (result.status === Office.AsyncResultStatus.Succeeded) {

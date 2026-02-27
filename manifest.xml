@@ -13,12 +13,12 @@
   <DisplayName DefaultValue="Thank You Test Add-in"/>
   <Description DefaultValue="Simple Outlook add-in for Microsoft 365 org deployment testing."/>
 
-  <IconUrl DefaultValue="https://YOUR_ADDIN_DOMAIN/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://YOUR_ADDIN_DOMAIN/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://YOUR_ADDIN_DOMAIN/support"/>
+  <IconUrl DefaultValue="https://abhishek-kmr525.github.io/ADG_CoS_Outlook-Addon-Hello/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://abhishek-kmr525.github.io/ADG_CoS_Outlook-Addon-Hello/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://abhishek-kmr525.github.io/ADG_CoS_Outlook-Addon-Hello/"/>
 
   <AppDomains>
-    <AppDomain>https://YOUR_ADDIN_DOMAIN</AppDomain>
+    <AppDomain>https://abhishek-kmr525.github.io</AppDomain>
   </AppDomains>
 
   <Hosts>
@@ -34,7 +34,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://YOUR_ADDIN_DOMAIN/src/fallback.html"/>
+        <SourceLocation DefaultValue="https://abhishek-kmr525.github.io/ADG_CoS_Outlook-Addon-Hello/src/fallback.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -115,13 +115,13 @@
 
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://YOUR_ADDIN_DOMAIN/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://YOUR_ADDIN_DOMAIN/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://YOUR_ADDIN_DOMAIN/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://abhishek-kmr525.github.io/ADG_CoS_Outlook-Addon-Hello/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://abhishek-kmr525.github.io/ADG_CoS_Outlook-Addon-Hello/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://abhishek-kmr525.github.io/ADG_CoS_Outlook-Addon-Hello/assets/icon-80.png"/>
       </bt:Images>
 
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://YOUR_ADDIN_DOMAIN/src/commands.html"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://abhishek-kmr525.github.io/ADG_CoS_Outlook-Addon-Hello/src/commands.html"/>
       </bt:Urls>
 
       <bt:ShortStrings>
