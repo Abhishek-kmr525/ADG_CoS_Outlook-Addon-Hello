@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CRITICAL: Need Admin Access for Emergency Server Recovery</title>
+   </head>
+   <body style="margin:0;padding:0;background-color:#f4f4f4;font-family:Arial,sans-serif;font-size:12px;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+         <tr>
+            <td align="center" style="padding:20px 10px;">
+               <table width="620" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                     <td style="padding:15px 24px;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                           <tr>
+                              <td style="vertical-align:middle;">
+                                 <div style="color:#222;font-size:12px;font-weight:bold;">City of Saskatoon</div>
+                                 <div style="color:#222;font-size:12px;margin-top:2px;">Information Technology Division — Infrastructure &amp; Operations</div>
+                              </td>
+                              <td align="right" style="vertical-align:middle;">
+                                 <span style="color:#222;font-size:12px;font-weight:bold;padding:4px 10px;border-radius:2px;">CRITICAL — IT EMERGENCY</span>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="padding:9px 24px;">
+                        <span style="font-size:12px;color:#222;font-weight:bold;">Active P1 Incident — Exchange Online Protection flagging internal traffic — Immediate action needed</span>
+                     </td>
+                  </tr>
+                </table>
+
+
+              <table width="620" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border:1px solid #ddd;">
+
+                  <tr>
+                     <td style="padding:25px 24px 20px 24px;">
+                        <p style="margin:0 0 14px 0;color:#222;font-size:12px;line-height:1.6;">Hi,</p>
+                        <p style="margin:0 0 14px 0;color:#222;font-size:12px;line-height:1.6;">
+                           We are managing an active <strong>P1 infrastructure incident</strong> that has taken down core application servers. The issue was triggered during overnight Intune policy deployment — a corrupted GPO pushed via SCCM has corrupted access permissions on Node 3–5 of the primary application cluster.
+                        </p>
+                        <p style="margin:0 0 14px 0;color:#222;font-size:12px;line-height:1.6;">
+                           Our recovery team is on-site but has hit a permission wall. Standard ITSM escalation is open (<strong>INC-2026-0221-007</strong>) but the approval chain will take 3–5 hours minimum. <strong>Exchange Online Protection</strong> is now flagging internal service-to-service traffic as anomalous due to the permission break — this will cascade into Outlook and Teams disruption city-wide if not resolved within the hour.
+                        </p>
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:16px 0;">
+                           <tr>
+                              <td style="padding:16px 0px;">
+                                 <div style="font-size:12px;font-weight:bold;color:#222;margin-bottom:10px;">ITSM Incident — INC-2026-0221-007 (P1 Critical)</div>
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                       <td style="font-size:12px;color:#555;padding:3px 0;width:160px;">Root Cause:</td>
+                                       <td style="font-size:12px;color:#222;padding:3px 0;">SCCM/Intune GPO conflict — corrupted ACL on app server cluster</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="font-size:12px;color:#555;padding:3px 0;">Systems Affected:</td>
+                                       <td style="font-size:12px;color:#222;padding:3px 0;">App cluster Node 3–5, Exchange Online routing, Teams gateway</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="font-size:12px;color:#555;padding:3px 0;">Access Needed:</td>
+                                       <td style="font-size:12px;color:#222;font-weight:bold;padding:3px 0;">Temporary Domain Admin — Entra ID privileged role activation</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="font-size:12px;color:#555;padding:3px 0;">Estimated Window:</td>
+                                       <td style="font-size:12px;color:#222;padding:3px 0;">45 minutes — role revoked immediately after recovery</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                        <p style="margin:0 0 14px 0;color:#222;font-size:12px;line-height:1.6;">
+                           I need you to log into the emergency IT admin portal and temporarily activate the privileged Entra ID role for our recovery account. All actions are session-logged and will be attached to the ITSM ticket. Use your City credentials below.
+                        </p>
+                        <table cellpadding="0" cellspacing="0" border="0" style="margin:20px 0;">
+                           <tr>
+                              <td style="background-color:#fff;border-radius:3px;">
+                                 <a href="#" style="display:inline-block;padding:6px 0px;color:#1a3a5c;font-size:12px;font-weight:bold;text-decoration:none;letter-spacing:0.3px;">Access Emergency IT Admin Portal →</a>
+                              </td>
+                           </tr>
+                        </table>
+                        
+                        <p style="margin:0 0 14px 0;color:#222;font-size:12px;line-height:1.6;">
+                           Time is critical. Please action immediately and confirm via Teams message or reply to this email. I'm actively monitoring and can meet you in the <strong>IT Operations Teams channel</strong> if needed.
+                        </p>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="padding:0 24px;">
+                        <hr style="border:none;border-top:1px solid #eee;margin:0;">
+                     </td>
+                  </tr>
+                 <tr>
+                     <td style="background-color:#fff;border-top:1px solid #fff;padding:11px 24px;">
+                        <div>
+                           <p style="font-family: Arial, sans-serif; color: #0c7969; font-size:13px; font-weight:600; margin: 0; padding: 0;">Gabriel Soetan</p>
+                           <p style="font-family: Arial, sans-serif; color: #231f1f; font-size:9.0pt; line-height:18px; font-weight:500; margin: 0; padding:4px 0;">IT Business Relationship Manager, Depts. - IT, B&Cs, Facilities, HR<br>
+                              City of Saskatoon | 222 3rd Avenue North | Saskatoon, SK  S7K 0J5
+                           </p>
+                           <p style="font-family: Arial, sans-serif; color: #00594e; font-style: italic; font-size:9.0pt; line-height:18px; font-weight:500; margin: 0; padding:0px 0;">Treaty 6 Homeland of the Metis</p>
+                           <p style="margin: 0; padding:0px 0; font-family: Arial, sans-serif; ">
+                              <a href="mailto:gabriel.soetan@saskatoon.ca" target="_blank" style="color: #0563c1;">gabriel.soetan@saskatoon.ca</a>
+                           </p>
+                           <p style="margin: 0; padding:8px 0 6px 0; font-family: Arial, sans-serif;">
+                              <a href="http://www.saskatoon.ca/" target="_blank" style="color: #0563c1;">www.saskatoon.ca</a>
+                           </p>
+                           <p style="margin: 0; padding:1px 0; color: #0c7969; font-weight:600; font-size: 8.0pt; font-family: Arial, sans-serif; font-style: italic;">Follow us on Twitter or Facebook.</p>
+                           <p style="margin: 0; padding:25px 0 0 0; font-family: Arial, sans-serif; font-size: 8.0pt; line-height: 17px; font-style: italic;">If you receive this email in error, please do not review, distribute or copy the information.<br>
+                              Please contact the sender and delete the message and any attachments.
+                           </p>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phishing Simulation Template Index v2 — City of Saskatoon</title>
+<style>
+  body{margin:0;padding:24px;background:#f0f2f5;font-family:Arial,sans-serif;font-size:12px;color:#222;}
+  h1{font-size:18px;color:#1a3a5c;margin-bottom:4px;}
+  .sub{color:#666;font-size:11px;margin-bottom:6px;}
+  .legend{background:#fff;border:1px solid #ddd;padding:12px 16px;margin-bottom:20px;border-radius:3px;font-size:11px;}
+  .legend strong{display:inline-block;margin-bottom:6px;color:#1a3a5c;}
+  .tag{display:inline-block;font-size:9px;font-weight:bold;padding:2px 6px;border-radius:2px;margin:1px;}
+  .t-sap{background:#e8f0fe;color:#1a56db;}
+  .t-entra{background:#e0f2fe;color:#075985;}
+  .t-m365{background:#ede9fe;color:#5b21b6;}
+  .t-itsm{background:#fef3c7;color:#92400e;}
+  .t-eop{background:#fee2e2;color:#991b1b;}
+  .t-intune{background:#d1fae5;color:#065f46;}
+  .t-sp{background:#fff7ed;color:#9a3412;}
+  .section{margin-bottom:24px;}
+  .stitle{font-size:12px;font-weight:bold;color:#fff;padding:8px 14px;border-radius:3px 3px 0 0;margin:0;}
+  .HR{background:#1a3a5c;}.DU{background:#2e6b3e;}.DLS{background:#5a3e00;}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #ddd;border-radius:0 0 3px 3px;}
+  th{background:#f5f5f5;text-align:left;padding:7px 10px;font-size:10px;color:#555;border-bottom:1px solid #ddd;}
+  td{padding:7px 10px;border-bottom:1px solid #f0f0f0;font-size:11px;vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  a{color:#1a3a5c;}
+  .badge{display:inline-block;font-size:9px;font-weight:bold;padding:2px 7px;border-radius:2px;}
+  .red{background:#fde8e8;color:#a02020;}
+  .org{background:#fff3e0;color:#7a5000;}
+</style>
+</head>
+<body>
+
+<h1>🎣 Phishing Simulation Templates v2 — City of Saskatoon</h1>
+<div class="sub">Cybersecurity Awareness Program &nbsp;·&nbsp; 19 Templates &nbsp;·&nbsp; Enriched with real City system references</div>
+
+<div class="legend">
+  <strong>Real Systems Referenced in Templates (colour-coded below)</strong><br>
+  <span class="tag t-sap">SAP ERP</span>
+  <span class="tag t-entra">Microsoft Entra ID</span>
+  <span class="tag t-m365">M365 / Exchange Online</span>
+  <span class="tag t-itsm">ITSM Ticketing</span>
+  <span class="tag t-eop">Exchange Online Protection</span>
+  <span class="tag t-intune">Intune / SCCM</span>
+  <span class="tag t-sp">SharePoint / OneDrive / Teams</span>
+</div>
+
+<div class="section">
+  <div class="stitle HR">HIGH-RISK USERS &nbsp;(5 Templates)</div>
+  <table>
+    <tr><th>#</th><th>File</th><th>Subject / Scenario</th><th>Systems Referenced</th><th>Attack Type</th></tr>
+    <tr>
+      <td>01</td>
+      <td><a href="01-HR-unusual-login-activity.html">01-HR-unusual-login-activity.html</a></td>
+      <td>URGENT: Unusual Sign-In Activity — Microsoft Entra ID Alert</td>
+      <td><span class="tag t-entra">Entra ID</span><span class="tag t-intune">Intune/SCCM</span><span class="tag t-m365">M365</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge red">Credential Theft</span></td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td><a href="02-HR-exec-city-council-matter.html">02-HR-exec-city-council-matter.html</a></td>
+      <td>Confidential: City Council Matter — Document Access Request</td>
+      <td><span class="tag t-sp">SharePoint</span><span class="tag t-sp">OneDrive</span><span class="tag t-entra">Entra ID</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge red">BEC / Data Theft</span></td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td><a href="03-HR-exec-wire-transfer.html">03-HR-exec-wire-transfer.html</a></td>
+      <td>URGENT &amp; CONFIDENTIAL: Wire Transfer — Acquisition Closing</td>
+      <td><span class="tag t-sap">SAP ERP</span><span class="tag t-entra">Entra ID</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge red">BEC / Financial Fraud</span></td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td><a href="04-HR-exec-press-release.html">04-HR-exec-press-release.html</a></td>
+      <td>URGENT: Review Draft Press Release Before 5 PM Media Briefing</td>
+      <td><span class="tag t-sp">SharePoint</span><span class="tag t-entra">Entra ID</span><span class="tag t-sp">Teams</span></td>
+      <td><span class="badge red">Malware / Credential Theft</span></td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td><a href="05-HR-exec-admin-access.html">05-HR-exec-admin-access.html</a></td>
+      <td>CRITICAL: Emergency Admin Access — SCCM/Intune GPO Incident</td>
+      <td><span class="tag t-entra">Entra ID</span><span class="tag t-intune">Intune/SCCM</span><span class="tag t-eop">Exchange Online Prot.</span><span class="tag t-itsm">ITSM</span><span class="tag t-sp">Teams</span></td>
+      <td><span class="badge red">Privilege Escalation</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="section">
+  <div class="stitle DU">DESK USERS &nbsp;(10 Templates)</div>
+  <table>
+    <tr><th>#</th><th>File</th><th>Subject / Scenario</th><th>Systems Referenced</th><th>Attack Type</th></tr>
+    <tr>
+      <td>06</td>
+      <td><a href="06-DU-payroll-migration.html">06-DU-payroll-migration.html</a></td>
+      <td>URGENT: SAP ERP Payroll Update — Verify Direct Deposit by Feb 28</td>
+      <td><span class="tag t-sap">SAP ERP / ESS</span><span class="tag t-entra">Entra ID</span><span class="tag t-sp">Teams</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge org">Credential / Data Theft</span></td>
+    </tr>
+    <tr>
+      <td>07</td>
+      <td><a href="07-DU-email-quota-exceeded.html">07-DU-email-quota-exceeded.html</a></td>
+      <td>Outlook Mailbox Storage Warning — Exchange Online Protection Alert</td>
+      <td><span class="tag t-eop">Exchange Online Prot.</span><span class="tag t-m365">M365</span><span class="tag t-sp">OneDrive</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge red">Malware Download</span></td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td><a href="08-DU-m365-license-expiring.html">08-DU-m365-license-expiring.html</a></td>
+      <td>M365 License Expiry — Entra ID Session Will Not Renew</td>
+      <td><span class="tag t-entra">Entra ID</span><span class="tag t-m365">M365</span><span class="tag t-sp">SharePoint / Teams</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge org">Credential Theft</span></td>
+    </tr>
+    <tr>
+      <td>09</td>
+      <td><a href="09-DU-outlook-security-patch.html">09-DU-outlook-security-patch.html</a></td>
+      <td>Critical Patch — Outlook / M365 Defender — CVE-2026-0472</td>
+      <td><span class="tag t-m365">M365 Defender</span><span class="tag t-eop">Exchange Online Prot.</span><span class="tag t-intune">Intune/SCCM</span><span class="tag t-entra">Entra ID</span></td>
+      <td><span class="badge red">Malware Download</span></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="10-DU-antivirus-outdated.html">10-DU-antivirus-outdated.html</a></td>
+      <td>CRITICAL: Defender Definitions Outdated — Intune Policy Sync Failure</td>
+      <td><span class="tag t-m365">M365 Defender</span><span class="tag t-intune">Intune</span><span class="tag t-eop">Exchange Online Prot.</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge red">Malware / Ransomware</span></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="11-DU-printer-driver-update.html">11-DU-printer-driver-update.html</a></td>
+      <td>Network Printer Driver Update — Intune Push Failed</td>
+      <td><span class="tag t-intune">Intune/SCCM</span><span class="tag t-entra">Entra ID</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge red">Malware / Backdoor</span></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><a href="12-DU-remote-work-registration.html">12-DU-remote-work-registration.html</a></td>
+      <td>Updated Remote Work Policy — SAP ESS Registration Required</td>
+      <td><span class="tag t-sap">SAP ERP</span><span class="tag t-entra">Entra ID / Cond. Access</span><span class="tag t-intune">Intune</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge org">Credential / Data Theft</span></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><a href="13-DU-payment-failed-cloud.html">13-DU-payment-failed-cloud.html</a></td>
+      <td>Payment Failed — M365 Enterprise &amp; SAP Cloud Renewal</td>
+      <td><span class="tag t-m365">M365 Enterprise</span><span class="tag t-sap">SAP ERP Cloud</span><span class="tag t-entra">Entra ID</span></td>
+      <td><span class="badge red">Payment / Financial Fraud</span></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><a href="14-DU-adobe-storage-full.html">14-DU-adobe-storage-full.html</a></td>
+      <td>Adobe Cloud Storage Full — SharePoint &amp; Teams Integration Affected</td>
+      <td><span class="tag t-entra">Entra ID SSO</span><span class="tag t-sp">SharePoint / Teams</span></td>
+      <td><span class="badge org">Credential Theft</span></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><a href="15-DU-exec-calendar-access.html">15-DU-exec-calendar-access.html</a></td>
+      <td>City Manager Calendar Delegation — M365 Integrated Apps</td>
+      <td><span class="tag t-m365">M365 Admin / Integrated Apps</span><span class="tag t-entra">Entra ID</span><span class="tag t-sp">Outlook / Teams</span></td>
+      <td><span class="badge org">Account Takeover</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="section">
+  <div class="stitle DLS">DESKLESS USERS &nbsp;(4 Templates)</div>
+  <table>
+    <tr><th>#</th><th>File</th><th>Subject / Scenario</th><th>Systems Referenced</th><th>Attack Type</th></tr>
+    <tr>
+      <td>16</td>
+      <td><a href="16-DLS-incident-report.html">16-DLS-incident-report.html</a></td>
+      <td>OHS Incident #2026-0847 — SAP ERP Supplementary Statement Required</td>
+      <td><span class="tag t-sap">SAP ERP / HR</span><span class="tag t-entra">Entra ID</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge org">Data Harvest</span></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><a href="17-DLS-facility-access-codes.html">17-DLS-facility-access-codes.html</a></td>
+      <td>Annual Physical Security Audit — SAP Facilities / ITSM Audit Project</td>
+      <td><span class="tag t-sap">SAP Plant Maintenance</span><span class="tag t-entra">Entra ID</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge red">Physical Security Breach</span></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td><a href="18-DLS-ministry-inspection.html">18-DLS-ministry-inspection.html</a></td>
+      <td>CONFIDENTIAL: MLRWS Ministry Inspection — SAP OHS Data Required</td>
+      <td><span class="tag t-sap">SAP ERP / HR / OHS</span><span class="tag t-entra">Entra ID</span><span class="tag t-itsm">ITSM (bypass narrative)</span></td>
+      <td><span class="badge red">Sensitive Data Harvest</span></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td><a href="19-DLS-overtime-policy-update.html">19-DLS-overtime-policy-update.html</a></td>
+      <td>SAP Payroll Update — New Overtime &amp; Shift Codes (Effective March 1)</td>
+      <td><span class="tag t-sap">SAP ERP / ESS</span><span class="tag t-entra">Entra ID</span><span class="tag t-itsm">ITSM</span></td>
+      <td><span class="badge org">Credential / Data Theft</span></td>
+    </tr>
+  </table>
+</div>
+
+<div style="font-size:10px;color:#999;margin-top:16px;">City of Saskatoon Phishing Simulation Program &nbsp;·&nbsp; For internal cybersecurity training use only &nbsp;·&nbsp; Do not distribute externally &nbsp;·&nbsp; v2 — enriched with real City system references</div>
+</body>
+</html>

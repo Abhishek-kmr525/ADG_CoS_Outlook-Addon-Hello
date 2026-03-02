@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Critical Security Patch — Outlook / M365 Defender — CVE-2026-0472</title>
+   </head>
+   <body style="margin:0;padding:0;background-color:#f4f4f4;font-family:Arial,sans-serif;font-size:12px;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f4f4;">
+         <tr>
+            <td align="center" style="padding:20px 10px;">
+               <table width="620" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                     <td style="padding:15px 24px;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                           <tr>
+                              <td style="vertical-align:middle;">
+                                 <div style="color:#222;font-size:15px;font-weight:bold;">City of Saskatoon</div>
+                                 <div style="color:#222;font-size:12px;margin-top:2px;">IT Security — Endpoint Patch Management (M365 Defender)</div>
+                              </td>
+                              <td align="right" style="vertical-align:middle;"><span style="color:#222;font-size:10px;font-weight:bold;padding:4px 10px;border-radius:2px;">CRITICAL PATCH</span></td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="padding:15px 24px;">
+                        <span style="font-size:12px;color:#222;font-weight:bold;">CVE-2026-0472 — Critical Outlook Vulnerability — M365 Defender Alert — Patch Required Now</span>
+                     </td>
+                  </tr>
+                </table>
+                <table width="620" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;border:1px solid #ddd;">
+
+
+                  <tr>
+                     <td style="padding:25px 24px 20px 24px;">
+                        <p style="margin:0 0 14px 0;color:#222;font-size:12px;line-height:1.6;">Dear Employee,</p>
+                        <p style="margin:0 0 14px 0;color:#222;font-size:12px;line-height:1.6;">
+                           <strong>Microsoft M365 Defender</strong> has flagged a critical unpatched vulnerability (CVE-2026-0472) on City-managed Outlook clients. This zero-day allows remote code execution when a specially crafted email is previewed — <strong>no user click is required.</strong> Because the City uses <strong>Exchange Online Protection</strong> as the primary email security layer, unpatched endpoints remain exposed even if the malicious email is blocked at the gateway.
+                        </p>
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:16px 0;">
+                           <tr>
+                              <td style="padding:16px 0px;">
+                                 <div style="font-size:12px;font-weight:bold;color:#000;margin-bottom:10px;">M365 Defender — Endpoint Vulnerability Alert</div>
+                                 <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                       <td style="font-size:12px;color:#555;padding:3px 0;width:170px;">CVE Reference:</td>
+                                       <td style="font-size:12px;color:#222;padding:3px 0;">CVE-2026-0472 (CVSS Score: 9.8 — Critical)</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="font-size:12px;color:#555;padding:3px 0;">Affected Software:</td>
+                                       <td style="font-size:12px;color:#222;padding:3px 0;">Microsoft Outlook (all M365 versions on City endpoints)</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="font-size:12px;color:#555;padding:3px 0;">Patch Deployment:</td>
+                                       <td style="font-size:12px;color:#222;padding:3px 0;">Manual — Intune/SCCM push delayed; manual install required</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="font-size:12px;color:#555;padding:3px 0;">Patch File:</td>
+                                       <td style="font-size:12px;color:#222;padding:3px 0;">OutlookPatch_CVE-2026-0472_CityIT.exe</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="font-size:12px;color:#555;padding:3px 0;">Install Time:</td>
+                                       <td style="font-size:12px;color:#222;padding:3px 0;">~3–5 minutes, Outlook restart required</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                        <p style="margin:0 0 14px 0;color:#222;font-size:12px;line-height:1.6;">
+                           The automatic Intune/SCCM patch push is experiencing a policy conflict affecting approximately 400 endpoints — yours is among them. Until the conflict is resolved, the patch must be installed manually. Download via the button below using your City Entra ID credentials.
+                        </p>
+                        <p style="margin:0 0 14px 0;color:#222;font-size:12px;line-height:1.6;">
+                           <strong>Unpatched devices will be temporarily isolated from the City network</strong> by M365 Defender Conditional Access policies after 5:00 PM today.
+                        </p>
+                        <table cellpadding="0" cellspacing="0" border="0" style="margin:20px 0;">
+                           <tr>
+                              <td style="background-color:#fff;border-radius:3px;">
+                                 <a href="#" style="display:inline-block;padding:6px 0px;color:#1a3a5c;font-size:12px;font-weight:bold;text-decoration:none;letter-spacing:0.3px;">Download &amp; Install Security Patch →</a>
+                              </td>
+                           </tr>
+                        </table>
+                   
+                        <p style="margin:0 0 12px 0;color:#777;font-size:12px;line-height:1.6;">Issues? Contact <a href="mailto:cybersecurity@saskatoon.ca" style="color:#1a3a5c;">cybersecurity@saskatoon.ca</a> or the IT Service Desk via ITSM.</p>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="padding:0 24px;">
+                        <hr style="border:none;border-top:1px solid #eee;margin:0;">
+                     </td>
+                  </tr>
+                   <tr>
+                     <td style="background-color:#fff;border-top:1px solid #fff;padding:11px 24px;">
+                        <div>
+                           <p style="font-family: Arial, sans-serif; color: #0c7969; font-size:13px; font-weight:600; margin: 0; padding: 0;">Gabriel Soetan</p>
+                           <p style="font-family: Arial, sans-serif; color: #231f1f; font-size:9.0pt; line-height:18px; font-weight:500; margin: 0; padding:4px 0;">IT Business Relationship Manager, Depts. - IT, B&Cs, Facilities, HR<br>
+                              City of Saskatoon | 222 3rd Avenue North | Saskatoon, SK  S7K 0J5
+                           </p>
+                           <p style="font-family: Arial, sans-serif; color: #00594e; font-style: italic; font-size:9.0pt; line-height:18px; font-weight:500; margin: 0; padding:0px 0;">Treaty 6 Homeland of the Metis</p>
+                           <p style="margin: 0; padding:0px 0; font-family: Arial, sans-serif; ">
+                              <a href="mailto:gabriel.soetan@saskatoon.ca" target="_blank" style="color: #0563c1;">gabriel.soetan@saskatoon.ca</a>
+                           </p>
+                           <p style="margin: 0; padding:8px 0 6px 0; font-family: Arial, sans-serif;">
+                              <a href="http://www.saskatoon.ca/" target="_blank" style="color: #0563c1;">www.saskatoon.ca</a>
+                           </p>
+                           <p style="margin: 0; padding:1px 0; color: #0c7969; font-weight:600; font-size: 8.0pt; font-family: Arial, sans-serif; font-style: italic;">Follow us on Twitter or Facebook.</p>
+                           <p style="margin: 0; padding:25px 0 0 0; font-family: Arial, sans-serif; font-size: 8.0pt; line-height: 17px; font-style: italic;">If you receive this email in error, please do not review, distribute or copy the information.<br>
+                              Please contact the sender and delete the message and any attachments.
+                           </p>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
